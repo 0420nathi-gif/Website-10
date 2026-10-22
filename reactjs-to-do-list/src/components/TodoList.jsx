@@ -1,25 +1,17 @@
-import React from 'react'
-import TodoCard from './TodoCard'
+import TodoCard from './TodoCard';
 
-export default function toDoList() {
+export default function TodoList() {
+  const todos = [
+    'Learn React',
+    'Learn React Router',
+    'Learn React Redux',
+  ];
 
- let todos = [
-  "Learn React",
-  "Learn React Router",
-  "Learn React Redux",
-
-   ]
   return (
-    <ul className='main'>
-    {
-     todos.map((todo, index) => {
-      return (
-       <TodoCard key={todoIndex}>
-        
-       </TodoCard>
-      )
-     })
-    }
+    <ul className="main">
+      {todos.map((todo) => (
+        <TodoCard key={todo} todo={todo} />
+      ))}
     </ul>
-  )
+  );
 }
