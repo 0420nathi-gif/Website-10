@@ -78,7 +78,9 @@ p {
   gap: 14px;
   padding: 14px;
   border-radius: 14px;
-  background: white;
+  border-left: 5px solid #f59e0b;
+  background: #fef3c7;
+  box-shadow: 0 2px 8px rgb(120 53 15 / 8%);
 }
 
 .todoItem p {
